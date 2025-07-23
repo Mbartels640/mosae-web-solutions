@@ -9,7 +9,7 @@ export const content = {
     hero: {
       title: "Jouw bedrijf, professioneel online.",
       subtitle:
-        "Dynamic Web Studio is een Limburgs webbureau gespecialiseerd in het bouwen van moderne, gebruiksvriendelijke websites voor kleine ondernemers.",
+        "Mosae Web Solutions is een Limburgs webbureau gespecialiseerd in het bouwen van moderne, gebruiksvriendelijke websites voor kleine ondernemers.",
       body: "Of je nu een restaurant runt, een lokale winkel hebt of als zelfstandige werkt – wij zorgen dat je online goed vindbaar bent. Met persoonlijke service, duidelijke prijzen en heldere communicatie helpen wij je digitaal vooruit.",
       cta: "Laat van je horen",
     },
@@ -112,7 +112,7 @@ export const content = {
       lastUpdated: "Laatst bijgewerkt: 22 juli 2025",
       introduction: {
         title: "Introductie",
-        p1: "Dynamic Web Studio, gevestigd in Maastricht, hecht veel waarde aan uw privacy. In dit beleid leggen we uit welke persoonsgegevens we verzamelen en gebruiken, met welk doel we dit doen en hoe we ervoor zorgen dat uw gegevens veilig zijn.",
+        p1: "Mosae Web Solutions, gevestigd in Maastricht, hecht veel waarde aan uw privacy. In dit beleid leggen we uit welke persoonsgegevens we verzamelen en gebruiken, met welk doel we dit doen en hoe we ervoor zorgen dat uw gegevens veilig zijn.",
       },
       dataWeCollect: {
         title: "Gegevens die we verzamelen via het contactformulier",
@@ -155,7 +155,7 @@ export const content = {
     hero: {
       title: "Ihr Unternehmen, professionell online.",
       subtitle:
-        "Dynamic Web Studio ist eine Webagentur aus Limburg, die sich auf die Erstellung moderner, benutzerfreundlicher Websites für Kleinunternehmer spezialisiert hat.",
+        "Mosae Web Solutions ist eine Webagentur aus Limburg, die sich auf die Erstellung moderner, benutzerfreundlicher Websites für Kleinunternehmer spezialisiert hat.",
       body: "Egal, ob Sie ein Restaurant betreiben, ein lokales Geschäft haben oder selbstständig sind – wir sorgen dafür, dass Sie online gut gefunden werden. Mit persönlichem Service, transparenten Preisen und klarer Kommunikation bringen wir Sie digital voran.",
       cta: "Kontakt aufnehmen",
     },
@@ -259,7 +259,7 @@ export const content = {
       lastUpdated: "Zuletzt aktualisiert: 22. Juli 2025",
       introduction: {
         title: "Einführung",
-        p1: "Dynamic Web Studio mit Sitz in Maastricht legt großen Wert auf Ihre Privatsphäre. In dieser Richtlinie erklären wir, welche personenbezogenen Daten wir erheben und verwenden, zu welchem Zweck wir dies tun und wie wir sicherstellen, dass Ihre Daten sicher sind.",
+        p1: "Mosae Web Solutions mit Sitz in Maastricht legt großen Wert auf Ihre Privatsphäre. In dieser Richtlinie erklären wir, welche personenbezogenen Daten wir erheben und verwenden, zu welchem Zweck wir dies tun und wie wir sicherstellen, dass Ihre Daten sicher sind.",
       },
       dataWeCollect: {
         title: "Daten, die wir über das Kontaktformular erheben",
@@ -302,7 +302,7 @@ export const content = {
     hero: {
       title: "Your Business, Professionally Online.",
       subtitle:
-        "Dynamic Web Studio is a web agency from Limburg specializing in building modern, user-friendly websites for small business owners.",
+        "Mosae Web Solutions is a web agency from Limburg specializing in building modern, user-friendly websites for small business owners.",
       body: "Whether you run a restaurant, own a local shop, or work as a freelancer – we ensure you are easily found online. With personal service, transparent pricing, and clear communication, we help you move forward digitally.",
       cta: "Get in Touch",
     },
@@ -404,7 +404,7 @@ export const content = {
       lastUpdated: "Last updated: July 22, 2025",
       introduction: {
         title: "Introduction",
-        p1: "Dynamic Web Studio, located in Maastricht, values your privacy. In this policy, we explain what personal data we collect and use, for what purpose we do so, and how we ensure your data is secure.",
+        p1: "Mosae Web Solutions, located in Maastricht, values your privacy. In this policy, we explain what personal data we collect and use, for what purpose we do so, and how we ensure your data is secure.",
       },
       dataWeCollect: {
         title: "Data we collect via the contact form",

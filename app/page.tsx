@@ -33,7 +33,7 @@ export default function Component() {
         <div className="container flex h-14 max-w-screen-2xl items-center justify-between px-4 md:px-6">
           <Link href="#home" className="flex items-center gap-2 font-semibold">
             <Mountain className="h-6 w-6" />
-            <span className="text-lg">Dynamic Web Studio</span>
+            <span className="text-lg">Mosae Web Solutions</span>
           </Link>
           <nav className="hidden items-center gap-4 md:flex">
             <Link
@@ -68,7 +68,7 @@ export default function Component() {
                     className="flex items-center gap-2 font-semibold"
                   >
                     <Mountain className="h-6 w-6" />
-                    <span className="text-lg">Dynamic Web Studio</span>
+                    <span className="text-lg">Mosae Web Solutions</span>
                   </Link>
                   <nav className="flex flex-col gap-4">
                     <SheetClose asChild>
@@ -604,7 +604,7 @@ export default function Component() {
       <footer className="border-t bg-muted">
         <div className="container mx-auto flex flex-col items-center justify-between gap-4 px-4 py-6 sm:flex-row md:px-6">
           <p className="text-sm text-muted-foreground">
-            &copy; {new Date().getFullYear()} Dynamic Web Studio.{" "}
+            &copy; {new Date().getFullYear()} Mosae Web Solutions.{" "}
             {currentContent.footer.rights}
           </p>
           <nav className="flex gap-4 sm:gap-6">

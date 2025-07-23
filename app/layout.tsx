@@ -11,7 +11,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Dynamic Web Studio | Websites voor Kleine Ondernemers in Limburg",
+  title: "Mosae Web Solutions | Websites voor Kleine Ondernemers in Limburg",
   description:
     "Wij helpen kleine bedrijven met hun online aanwezigheid door het maken en onderhouden van professionele websites.",
 };

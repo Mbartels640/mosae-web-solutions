@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { CookieConsentProvider } from "@/context/cookie-consent-context";
-import { LanguageProvider } from "@/context/language-context";
+import {LanguageProvider, useLanguage} from "@/context/language-context";
 import { GoogleAnalytics } from "@/components/google-analytics";
 import { VercelAnalytics } from "@/components/vercel-analytics";
 import { CookieConsentBanner } from "@/components/cookie-consent-banner";
@@ -15,7 +15,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Mosae Web Solutions | Websites voor Kleine Ondernemers in Limburg",
+  title: "Mosae Web Solutions",
   description:
     "Wij helpen kleine bedrijven met hun online aanwezigheid door het maken en onderhouden van professionele websites.",
 };
@@ -26,7 +26,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="nl">
+    <html lang="nl" suppressHydrationWarning>
       <body className={inter.className}>
         <Suspense fallback={null}>
           <CookieConsentProvider>

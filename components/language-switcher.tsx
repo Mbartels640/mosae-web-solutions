@@ -1,5 +1,4 @@
 "use client";
-
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -8,14 +7,11 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { Globe } from "lucide-react";
-import type { Language } from "@/lib/content";
+import { useLanguage } from "@/context/language-context";
 
-interface LanguageSwitcherProps {
-  lang: Language;
-  setLang: (lang: Language) => void;
-}
+export function LanguageSwitcher() {
+  const { lang, setLang } = useLanguage();
 
-export function LanguageSwitcher({ lang, setLang }: LanguageSwitcherProps) {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>

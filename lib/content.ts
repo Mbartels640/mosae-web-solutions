@@ -7,11 +7,11 @@ export const content = {
       contact: "Contact",
     },
     hero: {
-      title: "Jouw bedrijf, professioneel online.",
+      title: "Jouw digitale brug naar succes",
       subtitle:
-        "Mosae Web Solutions is een Limburgs webbureau gespecialiseerd in het bouwen van moderne, gebruiksvriendelijke websites voor kleine ondernemers.",
-      body: "Of je nu een restaurant runt, een lokale winkel hebt of als zelfstandige werkt – wij zorgen dat je online goed vindbaar bent. Met persoonlijke service, duidelijke prijzen en heldere communicatie helpen wij je digitaal vooruit.",
-      cta: "Laat van je horen",
+        "Mosae Web Solutions verbindt jouw lokale bedrijf met de digitale wereld, zoals het historische Trajectum Mosae ooit de oevers van de Maas met elkaar verbond.",
+      body: "Of je nu een restaurant runt, een lokale winkel hebt of als zelfstandige werkt, wij slaan de brug tussen jouw vakmanschap en online succes. Met persoonlijke service, duidelijke prijzen en heldere communicatie zorgen we dat je online goed vindbaar bent en nieuwe klanten bereikt.",
+      cta: "Contact opnemen",
     },
     services: {
       title: "Onze Diensten",
@@ -45,7 +45,7 @@ export const content = {
             "Regelmatige updates en backups",
             "Technische optimalisatie",
             "Snelheidsverbeteringen",
-            "SEO-audits en metadata",
+            "SEO audits en metadata",
           ],
         },
       ],
@@ -77,13 +77,13 @@ export const content = {
       lastUpdated: "Laatst bijgewerkt: 22 juli 2025",
       whatAreCookies: {
         title: "Wat zijn cookies?",
-        p1: "Cookies zijn kleine tekstbestanden die op uw computer of mobiele apparaat worden geplaatst wanneer u een website bezoekt. Ze worden veel gebruikt om websites te laten werken, of efficiënter te laten werken, en om rapportage-informatie te verstrekken.",
+        p1: "Cookies zijn kleine tekstbestanden die op uw computer of mobiele apparaat worden geplaatst wanneer u een website bezoekt. Ze worden veel gebruikt om websites te laten werken, of efficiënter te laten werken, en om rapportage informatie te verstrekken.",
       },
       howWeUse: {
         title: "Hoe gebruiken wij cookies?",
         p1: "We gebruiken cookies voor verschillende doeleinden:",
         list: [
-          "Om de voorkeur van uw cookie-toestemming op te slaan.",
+          "Om de voorkeur van uw cookie toestemming op te slaan.",
           "Om anonieme, geaggregeerde statistieken te verzamelen over het gebruik van onze website.",
         ],
       },
@@ -97,14 +97,14 @@ export const content = {
           title: "Analytische Cookies",
           p1: "Deze cookies helpen ons te begrijpen hoe bezoekers onze website gebruiken. Deze informatie is anoniem en wordt gebruikt om de site te verbeteren.",
           vercel:
-            "Deze dienst van Vercel verzamelt prestatie- en gebruiksgegevens zonder cookies te gebruiken en zonder individuele bezoekers te volgen. Het is volledig anoniem en privacy-vriendelijk.",
+            "Deze dienst van Vercel verzamelt prestatie en gebruiksgegevens zonder cookies te gebruiken en zonder individuele bezoekers te volgen. Het is volledig anoniem en privacy vriendelijk.",
           google:
             "Deze dienst van Google helpt ons het verkeer op de website te analyseren. Het plaatst cookies om unieke gebruikers te onderscheiden en het aantal bezoeken bij te houden. Dit script wordt alleen geactiveerd nadat u expliciet toestemming heeft gegeven.",
         },
       },
       managing: {
-        title: "Uw cookie-voorkeuren beheren",
-        p1: "U kunt uw cookie-instellingen op elk moment wijzigen door de cookies in uw browser te wissen. Hierdoor wordt uw toestemming gereset en kunt u bij uw volgende bezoek een nieuwe keuze maken.",
+        title: "Uw cookie voorkeuren beheren",
+        p1: "U kunt uw cookie instellingen op elk moment wijzigen door de cookies in uw browser te wissen. Hierdoor wordt uw toestemming gereset en kunt u bij uw volgende bezoek een nieuwe keuze maken.",
       },
     },
     privacyPolicy: {
@@ -153,10 +153,10 @@ export const content = {
       contact: "Kontakt",
     },
     hero: {
-      title: "Ihr Unternehmen, professionell online.",
+      title: "Deine digitale Brücke zum Erfolg",
       subtitle:
-        "Mosae Web Solutions ist eine Webagentur aus Limburg, die sich auf die Erstellung moderner, benutzerfreundlicher Websites für Kleinunternehmer spezialisiert hat.",
-      body: "Egal, ob Sie ein Restaurant betreiben, ein lokales Geschäft haben oder selbstständig sind – wir sorgen dafür, dass Sie online gut gefunden werden. Mit persönlichem Service, transparenten Preisen und klarer Kommunikation bringen wir Sie digital voran.",
+        "Mosae Web Solutions verbindet dein lokales Unternehmen mit der digitalen Welt, so wie das historische Trajectum Mosae einst die Ufer der Maas verband.",
+      body: "Egal, ob Sie ein Restaurant betreiben, ein lokales Geschäft haben oder selbstständig sind, wir sorgen dafür, dass Sie online gut gefunden werden. Mit persönlichem Service, transparenten Preisen und klarer Kommunikation bringen wir Sie digital voran.",
       cta: "Kontakt aufnehmen",
     },
     services: {
@@ -176,7 +176,7 @@ export const content = {
           ],
         },
         {
-          title: "Webseiten-Update",
+          title: "Webseiten Update",
           description: "Ihre bestehende Website modernisieren oder erweitern.",
           features: [
             "Anpassungen an bestehenden Websites",
@@ -186,13 +186,13 @@ export const content = {
           ],
         },
         {
-          title: "Wartung & SEO-Optimierung",
+          title: "Wartung & SEO Optimierung",
           description: "Ihre Website sorgenfrei aktuell und auffindbar halten.",
           features: [
             "Regelmäßige Updates und Backups",
             "Technische Optimierung",
             "Geschwindigkeitsverbesserungen",
-            "SEO-Audits und Metadaten",
+            "SEO Audits und Metadaten",
           ],
         },
       ],
@@ -220,7 +220,7 @@ export const content = {
       rights: "Alle Rechte vorbehalten.",
     },
     cookiePolicy: {
-      title: "Cookie-Richtlinie",
+      title: "Cookie Richtlinie",
       lastUpdated: "Zuletzt aktualisiert: 22. Juli 2025",
       whatAreCookies: {
         title: "Was sind Cookies?",
@@ -230,7 +230,7 @@ export const content = {
         title: "Wie verwenden wir Cookies?",
         p1: "Wir verwenden Cookies für verschiedene Zwecke:",
         list: [
-          "Um Ihre Cookie-Einwilligungspräferenz zu speichern.",
+          "Um Ihre Cookie Einwilligungspräferenz zu speichern.",
           "Um anonyme, aggregierte Statistiken über die Nutzung unserer Website zu sammeln.",
         ],
       },
@@ -241,17 +241,17 @@ export const content = {
           p1: "Wir verwenden ein funktionales Cookie (über localStorage), um Ihre Einwilligungsentscheidung zu speichern. Dieses Cookie ist für den Betrieb der Website unerlässlich und speichert keine persönlichen Informationen.",
         },
         analytics: {
-          title: "Analyse-Cookies",
+          title: "Analyse Cookies",
           p1: "Diese Cookies helfen uns zu verstehen, wie Besucher unsere Website nutzen. Diese Informationen sind anonym und werden zur Verbesserung der Website verwendet.",
           vercel:
-            "Dieser Dienst von Vercel sammelt Leistungs- und Nutzungsdaten, ohne Cookies zu verwenden und ohne einzelne Besucher zu verfolgen. Er ist vollständig anonym und datenschutzfreundlich.",
+            "Dieser Dienst von Vercel sammelt Leistungs und Nutzungsdaten, ohne Cookies zu verwenden und ohne einzelne Besucher zu verfolgen. Er ist vollständig anonym und datenschutzfreundlich.",
           google:
-            "Dieser Dienst von Google hilft uns, den Website-Verkehr zu analysieren. Er setzt Cookies, um eindeutige Benutzer zu unterscheiden und Besuche zu zählen. Dieses Skript wird nur aktiviert, nachdem Sie ausdrücklich Ihre Zustimmung gegeben haben.",
+            "Dieser Dienst von Google hilft uns, den Website Verkehr zu analysieren. Er setzt Cookies, um eindeutige Benutzer zu unterscheiden und Besuche zu zählen. Dieses Skript wird nur aktiviert, nachdem Sie ausdrücklich Ihre Zustimmung gegeben haben.",
         },
       },
       managing: {
-        title: "Verwaltung Ihrer Cookie-Einstellungen",
-        p1: "Sie können Ihre Cookie-Einstellungen jederzeit ändern, indem Sie die Cookies in Ihrem Browser löschen. Dadurch wird Ihre Einwilligung zurückgesetzt und Sie können bei Ihrem nächsten Besuch eine neue Wahl treffen.",
+        title: "Verwaltung Ihrer Cookie Einstellungen",
+        p1: "Sie können Ihre Cookie Einstellungen jederzeit ändern, indem Sie die Cookies in Ihrem Browser löschen. Dadurch wird Ihre Einwilligung zurückgesetzt und Sie können bei Ihrem nächsten Besuch eine neue Wahl treffen.",
       },
     },
     privacyPolicy: {
@@ -276,8 +276,8 @@ export const content = {
         p1: "Die von Ihnen über das Kontaktformular bereitgestellten Daten werden ausschließlich verwendet, um Sie bezüglich Ihrer Frage oder Ihres Kommentars zu kontaktieren. Wir werden Ihre Daten nicht für Marketingzwecke verwenden, es sei denn, Sie geben Ihre ausdrückliche Zustimmung, und wir werden sie niemals an Dritte verkaufen.",
       },
       dataStorage: {
-        title: "Datenspeicherung und -sicherheit",
-        p1: "Ihre Daten werden sicher in unserem E-Mail-System und/oder CRM gespeichert. Wir speichern die Daten nicht länger als unbedingt erforderlich, um den Zweck zu erreichen, für den Ihre Daten erhoben werden. Bei Kontaktanfragen bedeutet dies in der Regel, bis die Kommunikation abgeschlossen ist, es sei denn, es entsteht eine Kundenbeziehung.",
+        title: "Datenspeicherung und sicherheit",
+        p1: "Ihre Daten werden sicher in unserem E-Mail System und/oder CRM gespeichert. Wir speichern die Daten nicht länger als unbedingt erforderlich, um den Zweck zu erreichen, für den Ihre Daten erhoben werden. Bei Kontaktanfragen bedeutet dies in der Regel, bis die Kommunikation abgeschlossen ist, es sei denn, es entsteht eine Kundenbeziehung.",
       },
       yourRights: {
         title: "Ihre Rechte",
@@ -300,10 +300,10 @@ export const content = {
       contact: "Contact",
     },
     hero: {
-      title: "Your Business, Professionally Online.",
+      title: "Your digital bridge to success",
       subtitle:
-        "Mosae Web Solutions is a web agency from Limburg specializing in building modern, user-friendly websites for small business owners.",
-      body: "Whether you run a restaurant, own a local shop, or work as a freelancer – we ensure you are easily found online. With personal service, transparent pricing, and clear communication, we help you move forward digitally.",
+        "Mosae Web Solutions connects your local business to the digital world, just like the historic Trajectum Mosae once connected the banks of the Meuse River.",
+      body: "Whether you run a restaurant, own a local shop, or work as a freelancer, we ensure you are easily found online. With personal service, transparent pricing, and clear communication, we help you move forward digitally.",
       cta: "Get in Touch",
     },
     services: {
@@ -333,7 +333,7 @@ export const content = {
         },
         {
           title: "Maintenance & SEO Improvement",
-          description: "Keep your website up-to-date and findable, worry-free.",
+          description: "Keep your website up-to-date and findable, worry free.",
           features: [
             "Regular updates and backups",
             "Technical optimization",
@@ -389,7 +389,7 @@ export const content = {
           title: "Analytics Cookies",
           p1: "These cookies help us understand how visitors use our website. This information is anonymous and is used to improve the site.",
           vercel:
-            "This service from Vercel collects performance and usage data without using cookies and without tracking individual visitors. It is completely anonymous and privacy-friendly.",
+            "This service from Vercel collects performance and usage data without using cookies and without tracking individual visitors. It is completely anonymous and privacy friendly.",
           google:
             "This service from Google helps us analyze website traffic. It places cookies to distinguish unique users and track visits. This script is only activated after you have given your explicit consent.",
         },

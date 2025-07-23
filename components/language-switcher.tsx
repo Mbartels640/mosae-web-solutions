@@ -10,7 +10,7 @@ import { Globe } from "lucide-react";
 import { useLanguage } from "@/context/language-context";
 
 export function LanguageSwitcher() {
-  const { lang, setLang } = useLanguage();
+  const { setLang } = useLanguage();
 
   return (
     <DropdownMenu>

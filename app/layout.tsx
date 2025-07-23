@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { CookieConsentProvider } from "@/context/cookie-consent-context";
-import {LanguageProvider, useLanguage} from "@/context/language-context";
+import {LanguageProvider} from "@/context/language-context";
 import { GoogleAnalytics } from "@/components/google-analytics";
 import { VercelAnalytics } from "@/components/vercel-analytics";
 import { CookieConsentBanner } from "@/components/cookie-consent-banner";

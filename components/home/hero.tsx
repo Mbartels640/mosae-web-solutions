@@ -7,7 +7,6 @@ import Link from "next/link"
 import Image from "next/image"
 import { useLanguage } from "@/context/language-context"
 import { content } from "@/lib/content"
-import maastrichtImage from "../../public/Maastricht.jpg"
 
 export function Hero() {
     const { lang } = useLanguage()
@@ -205,13 +204,12 @@ export function Hero() {
                             transition={{ duration: 0.3 }}
                         >
                             <Image
-                                src={maastrichtImage}
+                                src="https://images.unsplash.com/photo-1631107452534-b8f9868a8b20?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                                 alt="Modern web development workspace"
                                 width={800}
                                 height={600}
                                 className="rounded-3xl object-cover shadow-2xl w-full h-auto relative z-10"
-                                priority
-                                unoptimized
+                                unoptimized={true}
                             />
 
                             {/* Image border glow */}

@@ -56,7 +56,9 @@ export const content = {
         "Klaar om de volgende stap te zetten? Vul het formulier in en we nemen snel contact op.",
       nameLabel: "Naam (verplicht)",
       namePlaceholder: "Jouw naam",
-      companyLabel: "Bedrijfsnaam (optioneel)",
+      emailLabel: "E-mailadres (verplicht)",
+      emailPlaceholder: "Jouw e-mailadres (verplicht)",
+      companyLabel: "Bedrijfsnaam (verplicht)",
       companyPlaceholder: "Naam van je bedrijf",
       servicesLabel: "Geïnteresseerde dienst(en)",
       messageLabel: "Bericht / toelichting (verplicht)",
@@ -68,6 +70,7 @@ export const content = {
       successMessage:
         "Bedankt voor je bericht! We nemen zo snel mogelijk contact met je op.",
       errorMessage: "Er is iets misgegaan. Probeer het later opnieuw.",
+      recaptchaError: "Er is iets misgegaan. Probeer het later opnieuw.",
     },
     footer: {
       rights: "Alle rechten voorbehouden.",
@@ -203,6 +206,8 @@ export const content = {
         "Bereit für den nächsten Schritt? Füllen Sie das Formular aus und wir melden uns schnellstmöglich.",
       nameLabel: "Name (erforderlich)",
       namePlaceholder: "Ihr Name",
+      emailLabel: "E-Mail (erforderlich)",
+      emailPlaceholder: "Ihre E-Mail-Adresse",
       companyLabel: "Firmenname (optional)",
       companyPlaceholder: "Name Ihrer Firma",
       servicesLabel: "Interessierte Leistung(en)",
@@ -215,6 +220,7 @@ export const content = {
         "Vielen Dank für Ihre Nachricht! Wir werden uns so schnell wie möglich bei Ihnen melden.",
       errorMessage:
         "Etwas ist schiefgegangen. Bitte versuchen Sie es später erneut.",
+      recaptchaError: "Etwas ist schiefgegangen. Bitte versuchen Sie es später erneut.",
     },
     footer: {
       rights: "Alle Rechte vorbehalten.",
@@ -349,6 +355,8 @@ export const content = {
         "Ready to take the next step? Fill out the form, and we'll get in touch soon.",
       nameLabel: "Name (required)",
       namePlaceholder: "Your name",
+      emailLabel: "Email (required)",
+      emailPlaceholder: "Your email address",
       companyLabel: "Company Name (optional)",
       companyPlaceholder: "Your company's name",
       servicesLabel: "Interested service(s)",
@@ -360,6 +368,7 @@ export const content = {
       successMessage:
         "Thank you for your message! We will get back to you as soon as possible.",
       errorMessage: "Something went wrong. Please try again later.",
+      recaptchaError: "Something went wrong. Please try again later.",
     },
     footer: {
       rights: "All rights reserved.",

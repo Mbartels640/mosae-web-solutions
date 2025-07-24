@@ -19,6 +19,14 @@ export const metadata: Metadata = {
   title: "Mosae Web Solutions",
   description:
     "Wij helpen kleine bedrijven met hun online aanwezigheid door het maken en onderhouden van professionele websites.",
+  robots: {
+    index: true,
+    follow: true,
+    "max-image-preview": "large",
+    "max-snippet": -1,
+    "max-video-preview": -1,
+    googleBot: "index, follow"
+  },
 };
 
 const RECAPTCHA_SITE_KEY = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY;

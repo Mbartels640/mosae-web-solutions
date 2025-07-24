@@ -6,7 +6,7 @@ import Script from "next/script";
 
 export function GoogleAnalytics() {
   const { hasConsented } = useCookieConsent();
-  const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_ID;
+  const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID;
 
   useEffect(() => {
     if (hasConsented && GA_MEASUREMENT_ID) {

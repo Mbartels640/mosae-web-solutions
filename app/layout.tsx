@@ -1,6 +1,6 @@
 import type React from "react";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Manrope } from "next/font/google";
 import "./globals.css";
 import { CookieConsentProvider } from "@/context/cookie-consent-context";
 import { LanguageProvider } from "@/context/language-context";
@@ -11,21 +11,29 @@ import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { Suspense } from "react";
 import { ThemeProvider } from "@/components/theme-provider";
-import {RecaptchaProvider} from "@/components/recaptcha-provider";
+import { RecaptchaProvider } from "@/components/recaptcha-provider";
 
-const inter = Inter({ subsets: ["latin"] });
+const manrope = Manrope({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-manrope",
+});
 
 export const metadata: Metadata = {
   title: "Mosae Web Solutions",
   description:
     "Wij helpen kleine bedrijven met hun online aanwezigheid door het maken en onderhouden van professionele websites.",
+  icons: [
+    { url: "/16x16.png", sizes: "16x16", type: "image/png" },
+    { url: "/32x32.png", sizes: "32x32", type: "image/png" },
+  ],
   robots: {
     index: true,
     follow: true,
     "max-image-preview": "large",
     "max-snippet": -1,
     "max-video-preview": -1,
-    googleBot: "index, follow"
+    googleBot: "index, follow",
   },
 };
 
@@ -37,7 +45,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="nl" suppressHydrationWarning>
-      <body className={inter.className}>
+      <body className={`${manrope.variable} font-sans`}>
         <Suspense fallback={null}>
           <RecaptchaProvider siteKey={RECAPTCHA_SITE_KEY!}>
             <CookieConsentProvider>

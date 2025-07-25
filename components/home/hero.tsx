@@ -13,7 +13,7 @@ export function Hero() {
     const currentContent = content[lang]
 
     return (
-        <section id="home" className="w-full py-12 md:py-24 lg:py-32 relative overflow-hidden">
+        <section id="home" className="w-full py-12 md:py-24 lg:py-32 relative overflow-hidden bg-background">
             <div className="container mx-auto px-4 md:px-6">
                 <div className="grid gap-8 lg:grid-cols-2 lg:gap-16 items-center">
                     {/* Left side - Content */}
@@ -25,7 +25,7 @@ export function Hero() {
                     >
                         {/* Floating decorative circles - now behind text with z-0 */}
                         <motion.div
-                            className="absolute -top-4 -left-4 w-20 h-20 rounded-full bg-gradient-to-br from-red-500/20 to-red-600/30 dark:from-red-400/30 dark:to-red-500/40 backdrop-blur-sm border border-red-500/20 dark:border-red-400/30 z-0"
+                            className="absolute -top-4 -left-4 w-20 h-20 rounded-full bg-gradient-to-br from-mosae-orange/20 to-mosae-orange/30 backdrop-blur-sm border border-mosae-orange/20 z-0"
                             initial={{ opacity: 0, scale: 0, rotate: -180 }}
                             animate={{
                                 opacity: 1,
@@ -51,13 +51,9 @@ export function Hero() {
                                     ease: "easeInOut",
                                 },
                             }}
-                            style={{
-                                background: "radial-gradient(circle, rgba(239, 68, 68, 0.15) 0%, rgba(220, 38, 38, 0.25) 100%)",
-                                boxShadow: "0 0 30px rgba(239, 68, 68, 0.3), inset 0 0 20px rgba(255, 255, 255, 0.1)",
-                            }}
                         />
                         <motion.div
-                            className="absolute top-8 -right-8 w-32 h-32 rounded-full bg-gradient-to-br from-red-400/15 to-red-500/25 dark:from-red-300/25 dark:to-red-400/35 backdrop-blur-sm border border-red-400/20 dark:border-red-300/30 z-0"
+                            className="absolute top-8 -right-8 w-32 h-32 rounded-full bg-gradient-to-br from-mosae-orange/15 to-mosae-orange/25 backdrop-blur-sm border border-mosae-orange/20 z-0"
                             initial={{ opacity: 0, scale: 0, rotate: 180 }}
                             animate={{
                                 opacity: 1,
@@ -83,15 +79,11 @@ export function Hero() {
                                     ease: "easeInOut",
                                 },
                             }}
-                            style={{
-                                background: "radial-gradient(circle, rgba(248, 113, 113, 0.1) 0%, rgba(239, 68, 68, 0.2) 100%)",
-                                boxShadow: "0 0 40px rgba(248, 113, 113, 0.25), inset 0 0 25px rgba(255, 255, 255, 0.08)",
-                            }}
                         />
 
                         {/* Additional floating particles - also behind text */}
                         <motion.div
-                            className="absolute top-1/2 left-1/4 w-3 h-3 rounded-full bg-red-500/40 dark:bg-red-400/60 z-0"
+                            className="absolute top-1/2 left-1/4 w-3 h-3 rounded-full bg-mosae-orange/40 z-0"
                             initial={{ opacity: 0, scale: 0 }}
                             animate={{
                                 opacity: [0, 0.4, 0.8, 0.4],
@@ -110,7 +102,7 @@ export function Hero() {
                             }}
                         />
                         <motion.div
-                            className="absolute bottom-1/4 right-1/3 w-2 h-2 rounded-full bg-red-600/50 dark:bg-red-300/70 z-0"
+                            className="absolute bottom-1/4 right-1/3 w-2 h-2 rounded-full bg-mosae-orange/50 z-0"
                             initial={{ opacity: 0, scale: 0 }}
                             animate={{
                                 opacity: [0, 0.3, 0.7, 0.3],
@@ -139,19 +131,19 @@ export function Hero() {
                         {/* Text content - now with higher z-index */}
                         <div className="space-y-4 relative z-10">
                             <motion.h1
-                                className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none bg-gradient-to-r from-gray-900 via-gray-800 to-red-600 dark:from-white dark:via-gray-100 dark:to-red-400 bg-clip-text text-transparent"
+                                className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none bg-gradient-to-r from-foreground via-foreground/80 to-mosae-orange bg-clip-text text-transparent mosae-heading"
                                 variants={fadeInLeft}
                             >
                                 {currentContent.hero.title}
                             </motion.h1>
                             <motion.p
-                                className="text-lg text-muted-foreground md:text-xl"
+                                className="text-lg text-muted-foreground md:text-xl mosae-body"
                                 variants={fadeInLeft}
                                 transition={{ delay: 0.2 }}
                             >
                                 {currentContent.hero.subtitle}
                             </motion.p>
-                            <motion.p className="text-base text-muted-foreground" variants={fadeInLeft} transition={{ delay: 0.3 }}>
+                            <motion.p className="text-base text-muted-foreground mosae-body" variants={fadeInLeft} transition={{ delay: 0.3 }}>
                                 {currentContent.hero.body}
                             </motion.p>
                         </div>
@@ -164,7 +156,7 @@ export function Hero() {
                                 <Button
                                     asChild
                                     size="lg"
-                                    className="bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white shadow-lg hover:shadow-xl transition-all duration-200 border-0"
+                                    className="bg-gradient-to-r from-mosae-orange to-mosae-red hover:from-mosae-red hover:to-red-800 text-primary-foreground shadow-lg hover:shadow-xl transition-all duration-200 border-0"
                                 >
                                     <Link href="#contact">{currentContent.hero.cta}</Link>
                                 </Button>
@@ -181,7 +173,7 @@ export function Hero() {
                     >
                         {/* Background glow for image */}
                         <motion.div
-                            className="absolute inset-0 bg-gradient-to-r from-red-500/10 to-transparent rounded-3xl blur-3xl"
+                            className="absolute inset-0 bg-gradient-to-r from-mosae-orange/10 to-transparent rounded-3xl blur-3xl"
                             initial={{ opacity: 0 }}
                             animate={{
                                 opacity: [0, 0.3, 0.6, 0.3],
@@ -213,7 +205,7 @@ export function Hero() {
                             />
 
                             {/* Image border glow */}
-                            <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-red-500/20 via-transparent to-red-500/20 opacity-0 hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+                            <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-mosae-orange/20 via-transparent to-mosae-orange/20 opacity-0 hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
                         </motion.div>
                     </motion.div>
                 </div>
@@ -221,7 +213,7 @@ export function Hero() {
 
             {/* Background ambient circles */}
             <motion.div
-                className="absolute top-1/4 left-1/4 w-64 h-64 rounded-full bg-gradient-radial from-red-500/5 to-transparent dark:from-red-400/10 blur-3xl"
+                className="absolute top-1/4 left-1/4 w-64 h-64 rounded-full bg-gradient-radial from-mosae-orange/5 to-transparent dark:from-mosae-orange/10 blur-3xl"
                 initial={{ opacity: 0, scale: 0.5 }}
                 animate={{
                     opacity: [0, 0.3, 0.6, 0.3],
@@ -238,7 +230,7 @@ export function Hero() {
                 }}
             />
             <motion.div
-                className="absolute bottom-1/4 right-1/4 w-48 h-48 rounded-full bg-gradient-radial from-red-600/5 to-transparent dark:from-red-300/10 blur-2xl"
+                className="absolute bottom-1/4 right-1/4 w-48 h-48 rounded-full bg-gradient-radial from-mosae-orange/5 to-transparent dark:from-mosae-orange/10 blur-2xl"
                 initial={{ opacity: 0, scale: 0.5 }}
                 animate={{
                     opacity: [0, 0.2, 0.5, 0.2],

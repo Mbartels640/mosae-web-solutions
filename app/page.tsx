@@ -17,7 +17,7 @@ export default function HomePage() {
       <Services />
       <motion.section
         id="contact"
-        className="w-full py-20 md:py-24 lg:py-32 bg-white dark:bg-gray-950"
+        className="w-full py-20 md:py-24 lg:py-32 bg-background"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.8 }}

@@ -1,5 +1,4 @@
 "use client";
-
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -34,7 +33,6 @@ import {
   Loader2,
   Mail,
   Building,
-  LucideMail,
   MessageSquare,
   User,
   Shield,
@@ -100,7 +98,6 @@ export function ContactForm({ content, services }: ContactFormProps) {
   );
   const { lang } = useLanguage();
   const { siteKey } = useRecaptchaContext();
-
   const { isLoaded: recaptchaLoaded, executeRecaptcha } = useRecaptcha({
     siteKey,
     action: "contact_form",
@@ -134,17 +131,14 @@ export function ContactForm({ content, services }: ContactFormProps) {
     setIsSubmitting(true);
     setResponseMessage("");
     setResponseType(null);
-
     try {
       // Execute reCAPTCHA
       const recaptchaToken = await executeRecaptcha();
-
       if (!recaptchaToken) {
         setResponseMessage(content.recaptchaError);
         setResponseType("error");
         return;
       }
-
       const response = await fetch("/api/contact", {
         method: "POST",
         headers: {
@@ -156,7 +150,6 @@ export function ContactForm({ content, services }: ContactFormProps) {
           recaptchaToken,
         }),
       });
-
       if (response.ok) {
         setResponseMessage(content.successMessage);
         setResponseType("success");
@@ -183,30 +176,26 @@ export function ContactForm({ content, services }: ContactFormProps) {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <Card className="relative overflow-hidden border-0 shadow-2xl bg-gradient-to-br from-white via-white to-red-50/30 dark:from-gray-900 dark:via-gray-900 dark:to-red-950/20">
-        {/* Background decoration */}
-        <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-red-500/10 to-transparent rounded-full -translate-y-16 translate-x-16" />
-        <div className="absolute bottom-0 left-0 w-24 h-24 bg-gradient-to-tr from-red-500/5 to-transparent rounded-full translate-y-12 -translate-x-12" />
-
+      <Card className="relative overflow-hidden border-0 shadow-2xl bg-gradient-to-br from-mosae-white via-mosae-white to-mosae-orange/10 dark:from-mosae-arsenic dark:via-mosae-arsenic dark:to-mosae-orange/20">
+        <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-mosae-orange/10 to-transparent rounded-full -translate-y-16 translate-x-16" />
+        <div className="absolute bottom-0 left-0 w-24 h-24 bg-gradient-to-tr from-mosae-orange/5 to-transparent rounded-full translate-y-12 -translate-x-12" />
         <CardHeader className="text-center relative z-10 pb-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
           >
-            <CardTitle className="text-3xl font-bold bg-gradient-to-r from-gray-900 to-red-600 bg-clip-text text-transparent dark:from-white dark:to-red-400">
+            <CardTitle className="text-3xl font-bold bg-gradient-to-r from-mosae-black to-mosae-orange bg-clip-text text-transparent dark:from-mosae-white dark:to-mosae-orange">
               {content.title}
             </CardTitle>
-            <CardDescription className="text-lg mt-3 text-gray-600 dark:text-gray-300">
+            <CardDescription className="text-lg mt-3 text-mosae-graphite dark:text-mosae-steel">
               {content.description}
             </CardDescription>
           </motion.div>
         </CardHeader>
-
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)}>
             <CardContent className="space-y-6 relative z-10">
-              {/* Name Field */}
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
@@ -218,13 +207,13 @@ export function ContactForm({ content, services }: ContactFormProps) {
                   render={({ field }) => (
                     <FormItem>
                       <FormLabel className="text-sm font-semibold flex items-center gap-2">
-                        <User className="w-4 h-4 text-red-600" />
+                        <User className="w-4 h-4 text-mosae-orange" />
                         {content.nameLabel}
                       </FormLabel>
                       <FormControl>
                         <Input
                           placeholder={content.namePlaceholder}
-                          className="focus:border-red-500 focus:ring-red-500/20 transition-all duration-200"
+                          className="dark:border-border focus:border-mosae-orange focus:ring-mosae-orange/20 transition-all duration-200"
                           {...field}
                         />
                       </FormControl>
@@ -233,8 +222,6 @@ export function ContactForm({ content, services }: ContactFormProps) {
                   )}
                 />
               </motion.div>
-
-              {/* Email Field */}
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
@@ -246,14 +233,14 @@ export function ContactForm({ content, services }: ContactFormProps) {
                   render={({ field }) => (
                     <FormItem>
                       <FormLabel className="text-sm font-semibold flex items-center gap-2">
-                        <LucideMail className="w-4 h-4 text-red-600" />
+                        <Mail className="w-4 h-4 text-mosae-orange" />
                         {content.emailLabel}
                       </FormLabel>
                       <FormControl>
                         <Input
                           type="email"
                           placeholder={content.emailPlaceholder}
-                          className="focus:border-red-500 focus:ring-red-500/20 transition-all duration-200"
+                          className="dark:border-border focus:border-mosae-orange focus:ring-mosae-orange/20 transition-all duration-200"
                           {...field}
                         />
                       </FormControl>
@@ -262,8 +249,6 @@ export function ContactForm({ content, services }: ContactFormProps) {
                   )}
                 />
               </motion.div>
-
-              {/* Company Field */}
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
@@ -275,13 +260,13 @@ export function ContactForm({ content, services }: ContactFormProps) {
                   render={({ field }) => (
                     <FormItem>
                       <FormLabel className="text-sm font-semibold flex items-center gap-2">
-                        <Building className="w-4 h-4 text-red-600" />
+                        <Building className="w-4 h-4 text-mosae-orange" />
                         {content.companyLabel}
                       </FormLabel>
                       <FormControl>
                         <Input
                           placeholder={content.companyPlaceholder}
-                          className="focus:border-red-500 focus:ring-red-500/20 transition-all duration-200"
+                          className="dark:border-border focus:border-mosae-orange focus:ring-mosae-orange/20 transition-all duration-200"
                           {...field}
                         />
                       </FormControl>
@@ -290,8 +275,6 @@ export function ContactForm({ content, services }: ContactFormProps) {
                   )}
                 />
               </motion.div>
-
-              {/* Services Selection */}
               <motion.div
                 className="space-y-3"
                 initial={{ opacity: 0, x: -20 }}
@@ -304,7 +287,7 @@ export function ContactForm({ content, services }: ContactFormProps) {
                   render={() => (
                     <FormItem>
                       <FormLabel className="text-sm font-semibold flex items-center gap-2">
-                        <Mail className="w-4 h-4 text-red-600" />
+                        <Mail className="w-4 h-4 text-mosae-orange" />
                         {content.servicesLabel}
                       </FormLabel>
                       <div className="grid gap-3 sm:grid-cols-1">
@@ -314,12 +297,12 @@ export function ContactForm({ content, services }: ContactFormProps) {
                             initial={{ opacity: 0, y: 10 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.6 + index * 0.1 }}
-                            className="flex items-center space-x-3 p-3 rounded-lg border border-gray-200 dark:border-gray-700 hover:border-red-300 dark:hover:border-red-600 transition-colors duration-200 hover:bg-red-50/50 dark:hover:bg-red-950/20"
+                            className="flex items-center space-x-3 p-3 rounded-lg border border-mosae-steel dark:border-mosae-steel hover:border-mosae-orange dark:hover:border-mosae-orange transition-colors duration-200 hover:bg-mosae-orange/5 dark:hover:bg-mosae-orange/10"
                           >
                             <FormField
                               control={form.control}
                               name="interestedServices"
-                              render={({ field }) => (
+                              render={() => (
                                 <FormItem className="flex items-center space-x-3 space-y-0 flex-1">
                                   <FormControl>
                                     <Checkbox
@@ -332,7 +315,7 @@ export function ContactForm({ content, services }: ContactFormProps) {
                                           checked as boolean,
                                         )
                                       }
-                                      className="data-[state=checked]:bg-red-600 data-[state=checked]:border-red-600"
+                                      className="data-[state=checked]:bg-mosae-orange data-[state=checked]:border-mosae-orange"
                                     />
                                   </FormControl>
                                   <FormLabel className="text-sm font-medium leading-none cursor-pointer flex-1">
@@ -353,7 +336,7 @@ export function ContactForm({ content, services }: ContactFormProps) {
                               >
                                 <Badge
                                   variant="secondary"
-                                  className="bg-red-100 text-red-700 dark:bg-red-900 dark:text-red-300"
+                                  className="bg-mosae-orange/10 text-mosae-orange dark:bg-mosae-orange/20 dark:text-mosae-orange"
                                 >
                                   Selected
                                 </Badge>
@@ -366,8 +349,6 @@ export function ContactForm({ content, services }: ContactFormProps) {
                   )}
                 />
               </motion.div>
-
-              {/* Message Field */}
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
@@ -379,7 +360,7 @@ export function ContactForm({ content, services }: ContactFormProps) {
                   render={({ field }) => (
                     <FormItem>
                       <FormLabel className="text-sm font-semibold flex items-center gap-2">
-                        <MessageSquare className="w-4 h-4 text-red-600" />
+                        <MessageSquare className="w-4 h-4 text-mosae-orange" />
                         {content.messageLabel}
                       </FormLabel>
                       <FormControl>
@@ -387,10 +368,10 @@ export function ContactForm({ content, services }: ContactFormProps) {
                           <Textarea
                             placeholder={content.messagePlaceholder}
                             rows={4}
-                            className="focus:border-red-500 focus:ring-red-500/20 transition-all duration-200 resize-none"
+                            className="dark:border-border focus:border-mosae-orange focus:ring-mosae-orange/20 transition-all duration-200 resize-none"
                             {...field}
                           />
-                          <div className="absolute bottom-3 right-3 text-xs text-gray-400">
+                          <div className="absolute bottom-3 right-3 text-xs text-mosae-space">
                             {watchedMessage.length}/500
                           </div>
                         </div>
@@ -400,8 +381,6 @@ export function ContactForm({ content, services }: ContactFormProps) {
                   )}
                 />
               </motion.div>
-
-              {/* Privacy Consent */}
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
@@ -416,19 +395,18 @@ export function ContactForm({ content, services }: ContactFormProps) {
                         <Checkbox
                           checked={field.value}
                           onCheckedChange={field.onChange}
-                          className="data-[state=checked]:bg-red-600 data-[state=checked]:border-red-600 mt-1"
+                          className="data-[state=checked]:bg-mosae-orange data-[state=checked]:border-mosae-orange mt-1 dark:border-mosae-steel"
                         />
                       </FormControl>
-                      <div className="space-y-1 leading-none">
-                        <FormLabel className="text-sm text-muted-foreground cursor-pointer">
-                          {content.privacyLabel}{" "}
+                      <div className="space-y-1">
+                        <FormLabel className="text-sm font-normal text-muted-foreground">
+                          {content.privacyLabel}
                           <Link
                             href="/privacy-policy"
-                            className="font-bold underline hover:text-red-600 transition-colors duration-200"
+                            className="font-bold underline hover:text-mosae-orange transition-colors duration-200"
                           >
                             {content.privacyLinkText}
                           </Link>
-                          .
                         </FormLabel>
                         <FormMessage />
                       </div>
@@ -436,13 +414,11 @@ export function ContactForm({ content, services }: ContactFormProps) {
                   )}
                 />
               </motion.div>
-
-              {/* reCAPTCHA Status Indicator */}
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.9 }}
-                className="flex items-center justify-center gap-2 text-xs text-gray-500 dark:text-gray-400"
+                className="flex items-center justify-center gap-2 text-xs text-mosae-space"
               >
                 <Shield className="w-3 h-3" />
                 {recaptchaLoaded ? (
@@ -452,7 +428,6 @@ export function ContactForm({ content, services }: ContactFormProps) {
                 )}
               </motion.div>
             </CardContent>
-
             <CardFooter className="flex flex-col items-center space-y-4 relative z-10 mt-4">
               <motion.div
                 className="w-full"
@@ -462,7 +437,7 @@ export function ContactForm({ content, services }: ContactFormProps) {
               >
                 <Button
                   type="submit"
-                  className="w-full bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 transform hover:scale-[1.02] disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
+                  className="w-full bg-gradient-to-r from-mosae-orange to-mosae-red hover:from-mosae-red hover:to-red-800 text-mosae-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 transform hover:scale-[1.02] disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
                   disabled={isSubmitting || !recaptchaLoaded}
                 >
                   <AnimatePresence mode="wait">
@@ -492,7 +467,6 @@ export function ContactForm({ content, services }: ContactFormProps) {
                   </AnimatePresence>
                 </Button>
               </motion.div>
-
               <AnimatePresence>
                 {responseMessage && (
                   <motion.div
@@ -502,7 +476,7 @@ export function ContactForm({ content, services }: ContactFormProps) {
                     className={`flex items-center gap-2 p-4 rounded-lg border w-full ${
                       responseType === "success"
                         ? "bg-green-50 border-green-200 text-green-800 dark:bg-green-950 dark:border-green-800 dark:text-green-200"
-                        : "bg-red-50 border-red-200 text-red-800 dark:bg-red-950 dark:border-red-800 dark:text-red-200"
+                        : "bg-mosae-red/10 border-mosae-red/20 text-mosae-red dark:bg-mosae-red/20 dark:border-mosae-red/30 dark:text-mosae-red"
                     }`}
                   >
                     {responseType === "success" ? (

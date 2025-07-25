@@ -52,7 +52,7 @@ export function Header() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
       >
-        <div className="container flex h-14 max-w-screen-2xl items-center justify-between px-4 md:px-6">
+        <div className="container flex h-14 max-w-screen-2xl items-center justify-between my-2 px-4 md:px-6">
           <Link href="/" className="flex items-center gap-2 font-semibold">
             <Logo />
           </Link>

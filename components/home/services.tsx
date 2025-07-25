@@ -18,6 +18,7 @@ export function Services() {
 
   return (
     <section
+      key={lang}
       id="services"
       className="w-full bg-mosae-cloud dark:bg-mosae-arsenic py-20 md:py-24 lg:py-32"
     >
@@ -27,7 +28,7 @@ export function Services() {
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: false, margin: "-100px" }}
         >
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-mosae-black dark:text-mosae-white mosae-heading">
             {currentContent.services.title}

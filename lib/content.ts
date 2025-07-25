@@ -7,7 +7,7 @@ export const content = {
       contact: "Contact",
     },
     hero: {
-      title: "Jouw digitale brug naar succes",
+      title: "Traditie verbinden met digitale excellentie",
       subtitle:
         "Mosae Web Solutions verbindt jouw lokale bedrijf met de digitale wereld, zoals het historische Trajectum Mosae ooit de oevers van de Maas met elkaar verbond.",
       body: "Of je nu een restaurant runt, een lokale winkel hebt of als zelfstandige werkt, wij slaan de brug tussen jouw vakmanschap en online succes. Met persoonlijke service, duidelijke prijzen en heldere communicatie zorgen we dat je online goed vindbaar bent en nieuwe klanten bereikt.",
@@ -156,7 +156,7 @@ export const content = {
       contact: "Kontakt",
     },
     hero: {
-      title: "Deine digitale Brücke zum Erfolg",
+      title: "Tradition mit digitaler Exzellenz verbinden",
       subtitle:
         "Mosae Web Solutions verbindet dein lokales Unternehmen mit der digitalen Welt, so wie das historische Trajectum Mosae einst die Ufer der Maas verband.",
       body: "Egal, ob Sie ein Restaurant betreiben, ein lokales Geschäft haben oder selbstständig sind, wir sorgen dafür, dass Sie online gut gefunden werden. Mit persönlichem Service, transparenten Preisen und klarer Kommunikation bringen wir Sie digital voran.",
@@ -306,7 +306,7 @@ export const content = {
       contact: "Contact",
     },
     hero: {
-      title: "Your digital bridge to success",
+      title: "Bridging Tradition with Digital Excellence",
       subtitle:
         "Mosae Web Solutions connects your local business to the digital world, just like the historic Trajectum Mosae once connected the banks of the Meuse River.",
       body: "Whether you run a restaurant, own a local shop, or work as a freelancer, we ensure you are easily found online. With personal service, transparent pricing, and clear communication, we help you move forward digitally.",

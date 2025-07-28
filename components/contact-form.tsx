@@ -40,6 +40,7 @@ import {
 import { useLanguage } from "@/context/language-context";
 import { useRecaptcha } from "@/hooks/use-recaptcha";
 import { useRecaptchaContext } from "@/components/recaptcha-provider";
+import { sendGTMEvent } from "@next/third-parties/google";
 
 interface ContactFormProps {
   content: {
@@ -154,6 +155,7 @@ export function ContactForm({ content, services }: ContactFormProps) {
         setResponseMessage(content.successMessage);
         setResponseType("success");
         form.reset();
+        sendGTMEvent({ event: "message submit", value: data.email });
       } else {
         const errorData = await response.json();
         throw new Error(errorData.message || "Failed to send message");

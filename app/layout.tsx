@@ -4,7 +4,7 @@ import { Manrope } from "next/font/google";
 import "./globals.css";
 import { CookieConsentProvider } from "@/context/cookie-consent-context";
 import { LanguageProvider } from "@/context/language-context";
-import { GoogleAnalytics } from "@/components/google-analytics";
+// import { GoogleAnalytics } from "@/components/google-analytics";
 import { VercelAnalytics } from "@/components/vercel-analytics";
 import { CookieConsentBanner } from "@/components/cookie-consent-banner";
 import { Header } from "@/components/header";
@@ -12,6 +12,8 @@ import { Footer } from "@/components/footer";
 import { Suspense } from "react";
 import { ThemeProvider } from "@/components/theme-provider";
 import { RecaptchaProvider } from "@/components/recaptcha-provider";
+import {GoogleAnalytics} from "@next/third-parties/google";
+import {GoogleAnalyticsNew} from "@/components/google-analytics";
 
 const manrope = Manrope({
   subsets: ["latin"],
@@ -49,6 +51,7 @@ export default function RootLayout({
         <Suspense fallback={null}>
           <RecaptchaProvider siteKey={RECAPTCHA_SITE_KEY!}>
             <CookieConsentProvider>
+              <GoogleAnalyticsNew />
               <LanguageProvider>
                 <ThemeProvider
                   attribute="class"
@@ -64,7 +67,6 @@ export default function RootLayout({
                   <CookieConsentBanner />
                 </ThemeProvider>
               </LanguageProvider>
-              <GoogleAnalytics />
             </CookieConsentProvider>
           </RecaptchaProvider>
         </Suspense>

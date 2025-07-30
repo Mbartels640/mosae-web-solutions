@@ -14,6 +14,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { RecaptchaProvider } from "@/components/recaptcha-provider";
 import {GoogleAnalytics} from "@next/third-parties/google";
 import {GoogleAnalyticsNew} from "@/components/google-analytics";
+import ChatWidget from "@/components/chat-widget";
 
 const manrope = Manrope({
   subsets: ["latin"],
@@ -60,6 +61,7 @@ export default function RootLayout({
                   disableTransitionOnChange
                 >
                   <div className="flex min-h-[100dvh] flex-col">
+                    <ChatWidget/>
                     <Header />
                     <main className="flex-1">{children}</main>
                     <Footer />

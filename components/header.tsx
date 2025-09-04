@@ -19,20 +19,17 @@ export function Header() {
   const { resolvedTheme } = useTheme()
   const [mounted, setMounted] = useState(false)
 
-  // Ensure the component is mounted on the client before rendering theme-specific UI
   useEffect(() => {
     setMounted(true)
   }, [])
 
   const Logo = () => {
-    // On the server or before mounting, render a placeholder to prevent layout shift
     if (!mounted) {
       return <div className="h-8 w-32 bg-muted animate-pulse rounded" />
     }
 
-    // Use resolvedTheme instead of theme to get the actual theme (not "system")
+    // bekijk https://github.com/pacocoursey/next-themes
     const isDark = resolvedTheme === "dark"
-
     return (
         <Image
             src={isDark ? "/logo_for_black_background.svg" : "/logo_for_white_background.svg"}

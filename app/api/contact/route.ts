@@ -38,14 +38,11 @@ async function verifyRecaptcha(token: string): Promise<{ success: boolean; score
             return { success: false, error: "reCAPTCHA verification failed" }
         }
 
-        // Check if the action matches what we expect
         if (data.action !== "contact_form") {
             console.error("reCAPTCHA action mismatch:", data.action)
             return { success: false, error: "Invalid reCAPTCHA action" }
         }
 
-        // Check the score (0.0 is very likely a bot, 1.0 is very likely a human)
-        // You can adjust this threshold based on your needs
         const minScore = 0.5
         if (data.score < minScore) {
             console.warn(`reCAPTCHA score too low: ${data.score}`)
